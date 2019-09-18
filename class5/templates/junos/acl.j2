@@ -1,0 +1,13 @@
+set firewall family inet filter my_acl term {{r1}} from protocol {{r1_protocol}}
+set firewall family inet filter my_acl term {{r1}} from destination-port {{r1_dest_port}}
+set firewall family inet filter my_acl term {{r1}} from destination-address {{r1_dest_addr}}
+set firewall family inet filter my_acl term {{r1}} then {{r1_state}}
+set firewall family inet filter my_acl term {{r2}} from protocol {{r2_protocol}}
+set firewall family inet filter my_acl term {{r2}} from destination-port {{r2_dest_port}}
+set firewall family inet filter my_acl term {{r2}} from destination-address {{r2_dest_addr}}
+set firewall family inet filter my_acl term {{r2}} then {{r2_state}}
+set firewall family inet filter my_acl term {{r3}} from protocol {{r3_protocol}}
+set firewall family inet filter my_acl term {{r3}} from destination-port {{r3_dest_port}}
+set firewall family inet filter my_acl term {{r3}} from destination-address {{r3_dest_addr}}
+set firewall family inet filter my_acl term {{r3}} then {{r3_state}}
+

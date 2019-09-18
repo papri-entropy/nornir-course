@@ -1,0 +1,6 @@
+{% for interface, data in interfaces.items() %}
+interface {{ data.int_name }}
+ no switchport
+ ip address {{ data.ip_address }} {{ data.ip_mask }}
+ no shutdown
+{% endfor %}

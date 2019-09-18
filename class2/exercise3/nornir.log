@@ -1,0 +1,45 @@
+2019-08-20 13:49:14,301 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip arp'} on 6 hosts
+2019-08-20 13:54:13,134 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip arp'} on 6 hosts
+2019-08-20 13:55:13,107 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip arp | include gateway'} on 6 hosts
+2019-08-20 14:03:02,856 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip arp | include gateway'} on 6 hosts
+2019-08-20 14:04:29,304 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip arp | include gateway'} on 6 hosts
+2019-08-20 14:05:29,203 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip arp | include gateway'} on 6 hosts
+2019-08-20 14:06:30,847 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip arp'} on 6 hosts
+2019-08-20 14:07:47,003 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip arp'} on 6 hosts
+2019-08-20 14:10:49,534 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip arp'} on 6 hosts
+2019-08-20 14:18:17,134 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip arp'} on 6 hosts
+2019-08-20 14:18:41,725 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run | include ip route 0.0.0.0'} on 6 hosts
+2019-08-20 14:21:56,098 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip arp'} on 6 hosts
+2019-08-20 14:22:20,506 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run | include ip route 0.0.0.0'} on 6 hosts
+2019-08-20 14:26:19,531 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip arp'} on 6 hosts
+2019-08-20 14:26:44,065 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run | include ip route 0.0.0.0'} on 6 hosts
+2019-08-20 14:32:22,828 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip arp'} on 6 hosts
+2019-08-20 14:32:47,410 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run | include ip route 0.0.0.0'} on 6 hosts
+2019-08-20 14:33:32,613 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip arp'} on 6 hosts
+2019-08-20 14:33:57,195 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run | include ip route 0.0.0.0'} on 6 hosts
+2019-08-20 14:34:59,219 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip arp'} on 6 hosts
+2019-08-20 14:35:23,751 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run | include ip route 0.0.0.0'} on 6 hosts
+2019-08-20 14:37:10,620 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip arp'} on 6 hosts
+2019-08-20 14:37:35,016 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run | include ip route 0.0.0.0'} on 6 hosts
+2019-08-20 14:38:04,134 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip arp'} on 6 hosts
+2019-08-20 14:38:28,545 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run | include ip route 0.0.0.0'} on 6 hosts
+2019-08-20 14:42:36,123 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip arp'} on 6 hosts
+2019-08-20 14:43:00,567 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run | include ip route 0.0.0.0'} on 6 hosts
+2019-08-20 14:44:04,443 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip arp'} on 6 hosts
+2019-08-20 14:44:28,768 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run | include ip route 0.0.0.0'} on 6 hosts
+2019-08-20 14:45:40,552 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip arp'} on 6 hosts
+2019-08-20 14:46:04,979 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run | include ip route 0.0.0.0'} on 6 hosts
+2019-08-20 14:47:31,494 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip arp'} on 6 hosts
+2019-08-20 14:47:55,826 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run | include ip route 0.0.0.0'} on 6 hosts
+2019-08-20 14:50:09,507 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip arp'} on 6 hosts
+2019-08-20 14:50:33,935 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run | include ip route 0.0.0.0'} on 6 hosts
+2019-08-20 14:55:31,537 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip arp'} on 6 hosts
+2019-08-20 14:55:55,917 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run | include ip route 0.0.0.0'} on 6 hosts
+2019-08-20 14:56:44,664 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip arp'} on 6 hosts
+2019-08-20 14:57:09,078 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run | include ip route 0.0.0.0'} on 6 hosts
+2019-08-20 14:57:38,041 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip arp'} on 6 hosts
+2019-08-20 14:58:02,443 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run | include ip route 0.0.0.0'} on 6 hosts
+2019-08-20 15:00:16,482 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip arp'} on 6 hosts
+2019-08-20 15:00:41,072 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run | include ip route 0.0.0.0'} on 6 hosts
+2019-09-18 13:44:31,708 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip arp'} on 6 hosts
+2019-09-18 13:44:56,177 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show run | include ip route 0.0.0.0'} on 6 hosts

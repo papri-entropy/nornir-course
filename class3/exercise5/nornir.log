@@ -1,0 +1,5 @@
+2019-09-01 09:19:56,773 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show int status', 'use_textfsm': True} on 4 hosts
+2019-09-01 09:28:26,952 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show int status', 'use_textfsm': True} on 4 hosts
+2019-09-01 09:43:58,000 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show int status', 'use_textfsm': True} on 4 hosts
+2019-09-01 10:14:47,982 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show int status', 'use_textfsm': True} on 4 hosts
+2019-09-18 13:50:02,807 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show int status', 'use_textfsm': True} on 4 hosts

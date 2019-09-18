@@ -1,0 +1,143 @@
+2019-09-17 13:32:56,430 -  nornir.core -     INFO -        run() - Running task 'junos_acl' with args {} on 1 hosts
+2019-09-17 13:32:56,434 - nornir.core.task -    ERROR -      start() - Host 'srx2': task 'load_yaml' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/data/load_yaml.py", line 24, in load_yaml
+    with open(file, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'srx2.yaml'
+
+2019-09-17 13:32:56,435 - nornir.core.task -    ERROR -      start() - Host 'srx2': task 'junos_acl' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise3_solution.py", line 8, in junos_acl
+    in_yaml = task.run(task=data.load_yaml, file=f"srx2.yaml")
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: load_yaml (failed)
+
+
+2019-09-17 13:34:42,877 -  nornir.core -     INFO -        run() - Running task 'junos_acl' with args {} on 1 hosts
+2019-09-17 13:34:42,881 - nornir.core.task -    ERROR -      start() - Host 'srx2': task 'load_yaml' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/data/load_yaml.py", line 24, in load_yaml
+    with open(file, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'srx2.yaml'
+
+2019-09-17 13:34:42,882 - nornir.core.task -    ERROR -      start() - Host 'srx2': task 'junos_acl' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise3_solution.py", line 8, in junos_acl
+    in_yaml = task.run(task=data.load_yaml, file=f"srx2.yaml")
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: load_yaml (failed)
+
+
+2019-09-17 13:34:55,670 -  nornir.core -     INFO -        run() - Running task 'junos_acl' with args {} on 1 hosts
+2019-09-17 13:34:55,674 - nornir.core.task -    ERROR -      start() - Host 'srx2': task 'load_yaml' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/data/load_yaml.py", line 24, in load_yaml
+    with open(file, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'srx2.yaml'
+
+2019-09-17 13:34:55,674 - nornir.core.task -    ERROR -      start() - Host 'srx2': task 'junos_acl' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise3_solution.py", line 8, in junos_acl
+    in_yaml = task.run(task=data.load_yaml, file=f"srx2.yaml")
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: load_yaml (failed)
+
+
+2019-09-17 13:35:38,357 -  nornir.core -     INFO -        run() - Running task 'junos_acl' with args {} on 1 hosts
+2019-09-17 13:35:38,361 - nornir.core.task -    ERROR -      start() - Host 'srx2': task 'load_yaml' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/data/load_yaml.py", line 24, in load_yaml
+    with open(file, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'srx2.yaml'
+
+2019-09-17 13:35:38,361 - nornir.core.task -    ERROR -      start() - Host 'srx2': task 'junos_acl' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise3_solution.py", line 8, in junos_acl
+    in_yaml = task.run(task=data.load_yaml, file=f"srx2.yaml")
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: load_yaml (failed)
+
+
+2019-09-17 13:36:33,076 -  nornir.core -     INFO -        run() - Running task 'junos_acl' with args {} on 1 hosts
+2019-09-17 13:36:33,081 - nornir.core.task -    ERROR -      start() - Host 'srx2': task 'junos_acl' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise3_solution.py", line 15, in junos_acl
+    f"set firewall family inet filter {acl_name} term {acl_entry['term_name']} "
+TypeError: string indices must be integers
+
+2019-09-17 13:36:42,366 -  nornir.core -     INFO -        run() - Running task 'junos_acl' with args {} on 1 hosts
+2019-09-17 13:36:42,372 - nornir.core.task -    ERROR -      start() - Host 'srx2': task 'junos_acl' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise3_solution.py", line 15, in junos_acl
+    f"set firewall family inet filter {acl_name} term {acl_entry['term_name']} "
+TypeError: string indices must be integers
+
+2019-09-17 13:37:58,942 -  nornir.core -     INFO -        run() - Running task 'junos_acl' with args {} on 1 hosts
+2019-09-17 13:37:58,948 - nornir.core.task -    ERROR -      start() - Host 'srx2': task 'junos_acl' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise3_solution.py", line 15, in junos_acl
+    f"set firewall family inet filter {acl_name} term {acl_entry['term_name']} "
+TypeError: string indices must be integers
+
+2019-09-17 13:40:25,475 -  nornir.core -     INFO -        run() - Running task 'junos_acl' with args {} on 1 hosts
+2019-09-17 13:42:58,899 -  nornir.core -     INFO -        run() - Running task 'junos_acl' with args {} on 1 hosts
+2019-09-17 13:43:34,827 -  nornir.core -     INFO -        run() - Running task 'junos_acl' with args {} on 1 hosts
+2019-09-17 13:43:34,834 - nornir.core.task -    ERROR -      start() - Host 'srx2': task 'junos_acl' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise3_solution.py", line 14, in junos_acl
+    pp(acl_name, acl_entries)
+  File "/usr/lib64/python3.6/pprint.py", line 53, in pprint
+    printer.pprint(object)
+  File "/usr/lib64/python3.6/pprint.py", line 139, in pprint
+    self._format(object, self._stream, 0, 0, {}, 0)
+  File "/usr/lib64/python3.6/pprint.py", line 176, in _format
+    stream.write(rep)
+AttributeError: 'list' object has no attribute 'write'
+
+2019-09-17 13:44:31,983 -  nornir.core -     INFO -        run() - Running task 'junos_acl' with args {} on 1 hosts
+2019-09-17 13:44:31,989 - nornir.core.task -    ERROR -      start() - Host 'srx2': task 'junos_acl' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise3_solution.py", line 14, in junos_acl
+    pp(acl_name, acl_entries)
+  File "/usr/lib64/python3.6/pprint.py", line 53, in pprint
+    printer.pprint(object)
+  File "/usr/lib64/python3.6/pprint.py", line 139, in pprint
+    self._format(object, self._stream, 0, 0, {}, 0)
+  File "/usr/lib64/python3.6/pprint.py", line 176, in _format
+    stream.write(rep)
+AttributeError: 'list' object has no attribute 'write'
+
+2019-09-17 13:44:48,637 -  nornir.core -     INFO -        run() - Running task 'junos_acl' with args {} on 1 hosts
+2019-09-17 13:45:35,949 -  nornir.core -     INFO -        run() - Running task 'junos_acl' with args {} on 1 hosts
+2019-09-18 14:11:12,114 -  nornir.core -     INFO -        run() - Running task 'junos_acl' with args {} on 1 hosts
+2019-09-18 14:11:40,150 -  nornir.core -     INFO -        run() - Running task 'junos_acl' with args {} on 1 hosts

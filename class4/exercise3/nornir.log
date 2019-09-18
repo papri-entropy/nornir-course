@@ -1,0 +1,1 @@
+2019-09-12 01:37:05,058 -  nornir.core -     INFO -        run() - Running task 'configure_vlan' with args {'vlan_id': '123', 'vlan_name': 'ntp_vlan'} on 6 hosts

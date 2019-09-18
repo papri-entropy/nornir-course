@@ -1,0 +1,9 @@
+---
+ios1:
+    hostname: ios1_router
+    groups:
+        - ios
+ios2:
+    hostname: ios2_router
+    groups:
+        - ios

@@ -1,0 +1,11 @@
+---
+ios1:
+    hostname: ios1_router
+    groups:
+        - ios
+    data:
+        dns1: 8.8.8.8
+ios2:
+    hostname: ios2_router
+    groups:
+        - ios

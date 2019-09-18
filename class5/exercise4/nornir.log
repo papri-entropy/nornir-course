@@ -1,0 +1,3 @@
+2019-09-17 13:48:53,772 -  nornir.core -     INFO -        run() - Running task 'junos_acl' with args {} on 1 hosts
+2019-09-17 14:03:30,957 -  nornir.core -     INFO -        run() - Running task 'junos_acl' with args {} on 1 hosts
+2019-09-18 14:12:26,755 -  nornir.core -     INFO -        run() - Running task 'junos_acl' with args {} on 1 hosts

@@ -1,0 +1,32 @@
+2019-08-14 10:19:21,261 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 10:20:11,826 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 10:20:11,931 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 10:22:43,184 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 10:23:53,334 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 10:26:01,008 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 10:26:07,042 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 10:29:31,665 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 10:29:31,770 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 10:29:34,978 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 10:29:35,084 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 10:29:58,764 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 10:29:58,769 - nornir.core.task -    ERROR -      start() - Host 'ios2': task 'my_first_task' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise4.py", line 11, in my_first_task
+    print(my_hosts[i].hostname)
+NameError: name 'i' is not defined
+
+2019-08-14 10:29:58,770 - nornir.core.task -    ERROR -      start() - Host 'ios1': task 'my_first_task' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise4.py", line 11, in my_first_task
+    print(my_hosts[i].hostname)
+NameError: name 'i' is not defined
+
+2019-08-14 10:30:32,976 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 10:31:54,351 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 10:39:47,059 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-09-18 13:39:09,597 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts

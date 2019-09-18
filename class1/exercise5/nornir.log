@@ -1,0 +1,164 @@
+2019-08-14 10:57:38,302 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 10:57:51,002 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:01:53,260 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:02:12,224 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:02:12,228 - nornir.core.task -    ERROR -      start() - Host 'ios1': task 'my_first_task' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise5.py", line 9, in my_first_task
+    if task.host == ios1:
+NameError: name 'ios1' is not defined
+
+2019-08-14 11:02:12,228 - nornir.core.task -    ERROR -      start() - Host 'ios2': task 'my_first_task' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise5.py", line 9, in my_first_task
+    if task.host == ios1:
+NameError: name 'ios1' is not defined
+
+2019-08-14 11:03:24,632 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:03:24,636 - nornir.core.task -    ERROR -      start() - Host 'ios1': task 'my_first_task' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise5.py", line 9, in my_first_task
+    task.host == ios1
+NameError: name 'ios1' is not defined
+
+2019-08-14 11:03:24,636 - nornir.core.task -    ERROR -      start() - Host 'ios2': task 'my_first_task' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise5.py", line 9, in my_first_task
+    task.host == ios1
+NameError: name 'ios1' is not defined
+
+2019-08-14 11:03:41,356 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:03:41,360 - nornir.core.task -    ERROR -      start() - Host 'ios1': task 'my_first_task' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise5.py", line 9, in my_first_task
+    print(task.host == ios1)
+NameError: name 'ios1' is not defined
+
+2019-08-14 11:03:41,361 - nornir.core.task -    ERROR -      start() - Host 'ios2': task 'my_first_task' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise5.py", line 9, in my_first_task
+    print(task.host == ios1)
+NameError: name 'ios1' is not defined
+
+2019-08-14 11:03:52,811 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:04:20,898 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:04:33,639 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:04:33,643 - nornir.core.task -    ERROR -      start() - Host 'ios1': task 'my_first_task' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise5.py", line 9, in my_first_task
+    print(task.host == ios2)
+NameError: name 'ios2' is not defined
+
+2019-08-14 11:04:33,643 - nornir.core.task -    ERROR -      start() - Host 'ios2': task 'my_first_task' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise5.py", line 9, in my_first_task
+    print(task.host == ios2)
+NameError: name 'ios2' is not defined
+
+2019-08-14 11:05:31,144 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:05:31,148 - nornir.core.task -    ERROR -      start() - Host 'ios1': task 'my_first_task' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise5.py", line 9, in my_first_task
+    print(nr.inventory.hosts.data)
+NameError: name 'nr' is not defined
+
+2019-08-14 11:05:31,148 - nornir.core.task -    ERROR -      start() - Host 'ios2': task 'my_first_task' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise5.py", line 9, in my_first_task
+    print(nr.inventory.hosts.data)
+NameError: name 'nr' is not defined
+
+2019-08-14 11:06:59,365 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:08:19,147 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:09:52,244 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:10:31,931 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:11:31,582 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:12:44,266 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:13:17,668 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:15:11,812 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:15:11,816 - nornir.core.task -    ERROR -      start() - Host 'ios1': task 'my_first_task' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise5.py", line 13, in my_first_task
+    print(nr.inventory.hosts["ios1"].data["dns1"])
+NameError: name 'nr' is not defined
+
+2019-08-14 11:15:11,816 - nornir.core.task -    ERROR -      start() - Host 'ios2': task 'my_first_task' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise5.py", line 13, in my_first_task
+    print(nr.inventory.hosts["ios1"].data["dns1"])
+NameError: name 'nr' is not defined
+
+2019-08-14 11:17:58,738 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:22:54,797 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:23:36,382 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:23:36,386 - nornir.core.task -    ERROR -      start() - Host 'ios2': task 'my_first_task' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise5.py", line 12, in my_first_task
+    print(task.host.data["dns1"])
+KeyError: 'dns1'
+
+2019-08-14 11:24:13,349 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:24:13,354 - nornir.core.task -    ERROR -      start() - Host 'ios2': task 'my_first_task' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise5.py", line 12, in my_first_task
+    print(task.host.data["dns1"])
+KeyError: 'dns1'
+
+2019-08-14 11:25:18,967 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:25:52,814 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:26:27,668 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:26:54,038 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:27:18,755 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:28:00,752 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:29:14,019 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:31:19,209 -  nornir.core -     INFO -        run() - Running task 'my_task' with args {} on 2 hosts
+2019-08-14 11:34:05,315 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:34:05,319 - nornir.core.task -    ERROR -      start() - Host 'ios1': task 'my_first_task' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise5.py", line 9, in my_first_task
+    print(f"DNS1: {host['dns1']}")
+NameError: name 'host' is not defined
+
+2019-08-14 11:34:05,320 - nornir.core.task -    ERROR -      start() - Host 'ios2': task 'my_first_task' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise5.py", line 9, in my_first_task
+    print(f"DNS1: {host['dns1']}")
+NameError: name 'host' is not defined
+
+2019-08-14 11:34:40,500 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:36:26,097 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-08-14 11:38:05,531 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-09-18 13:39:30,393 -  nornir.core -     INFO -        run() - Running task 'my_first_task' with args {} on 2 hosts
+2019-09-18 13:39:50,237 -  nornir.core -     INFO -        run() - Running task 'my_task' with args {} on 2 hosts
