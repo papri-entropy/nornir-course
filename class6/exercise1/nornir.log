@@ -1,0 +1,106 @@
+2019-09-29 09:02:52,205 -  nornir.core -     INFO -        run() - Running task 'failed_show_command' with args {} on 1 hosts
+2019-09-29 09:02:52,209 - nornir.core.task -    ERROR -      start() - Host 'srx2': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+TypeError: netmiko_send_command() missing 1 required positional argument: 'command_string'
+
+2019-09-29 09:02:52,209 - nornir.core.task -    ERROR -      start() - Host 'srx2': task 'failed_show_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise1.py", line 11, in failed_show_command
+    output = task.run(task=networking.netmiko_send_command, command="show ip interface brief")
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2019-09-29 09:03:27,321 -  nornir.core -     INFO -        run() - Running task 'failed_show_command' with args {} on 1 hosts
+2019-09-29 09:03:27,325 - nornir.core.task -    ERROR -      start() - Host 'srx2': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+TypeError: netmiko_send_command() missing 1 required positional argument: 'command_string'
+
+2019-09-29 09:03:27,325 - nornir.core.task -    ERROR -      start() - Host 'srx2': task 'failed_show_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise1.py", line 11, in failed_show_command
+    output = task.run(task=networking.netmiko_send_command, command="show ip interface brief")
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2019-09-29 09:06:41,987 -  nornir.core -     INFO -        run() - Running task 'failed_show_command' with args {} on 1 hosts
+2019-09-29 09:06:41,991 - nornir.core.task -    ERROR -      start() - Host 'srx2': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+TypeError: netmiko_send_command() missing 1 required positional argument: 'command_string'
+
+2019-09-29 09:06:41,992 - nornir.core.task -    ERROR -      start() - Host 'srx2': task 'failed_show_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise1.py", line 11, in failed_show_command
+    output = task.run(task=networking.netmiko_send_command, command="show interfaces brief")
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2019-09-29 09:09:01,688 -  nornir.core -     INFO -        run() - Running task 'failed_show_command' with args {} on 1 hosts
+2019-09-29 09:09:58,364 -  nornir.core -     INFO -        run() - Running task 'failed_show_command' with args {} on 1 hosts
+2019-09-29 09:11:25,887 -  nornir.core -     INFO -        run() - Running task 'failed_show_command' with args {} on 1 hosts
+2019-09-29 09:12:04,086 -  nornir.core -     INFO -        run() - Running task 'failed_show_command' with args {} on 1 hosts
+2019-09-29 09:18:58,616 -  nornir.core -     INFO -        run() - Running task 'failed_show_command' with args {} on 1 hosts
+2019-09-29 09:19:20,490 -  nornir.core -     INFO -        run() - Running task 'failed_show_command' with args {} on 1 hosts
+2019-09-29 09:20:01,929 -  nornir.core -     INFO -        run() - Running task 'failed_show_command' with args {} on 1 hosts
+2019-09-29 09:21:12,478 -  nornir.core -     INFO -        run() - Running task 'failed_show_command' with args {} on 1 hosts
+2019-09-29 09:21:35,302 -  nornir.core -     INFO -        run() - Running task 'failed_show_command' with args {} on 1 hosts
+2019-09-29 09:22:13,903 -  nornir.core -     INFO -        run() - Running task 'failed_show_command' with args {} on 1 hosts
+2019-09-29 09:24:08,088 -  nornir.core -     INFO -        run() - Running task 'failed_show_command' with args {} on 1 hosts
+2019-09-29 09:24:29,992 -  nornir.core -     INFO -        run() - Running task 'failed_show_command' with args {} on 1 hosts
+2019-09-29 09:24:53,905 -  nornir.core -     INFO -        run() - Running task 'failed_show_command' with args {} on 1 hosts
+2019-09-29 09:25:14,924 -  nornir.core -     INFO -        run() - Running task 'failed_show_command' with args {} on 1 hosts
+2019-09-29 09:26:17,176 -  nornir.core -     INFO -        run() - Running task 'failed_show_command' with args {} on 1 hosts
+2019-09-29 09:26:28,302 -  nornir.core -     INFO -        run() - Running task 'failed_show_command' with args {} on 1 hosts
+2019-09-29 09:29:50,529 -  nornir.core -     INFO -        run() - Running task 'failed_show_command' with args {} on 1 hosts
+2019-09-29 09:29:55,983 - nornir.core.task -    ERROR -      start() - Host 'srx2': task 'failed_show_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise1.py", line 16, in failed_show_command
+    raise ValueError("THIS IS AN ERROR - INVALID COMMAND")
+ValueError: THIS IS AN ERROR - INVALID COMMAND
+
+2019-09-29 09:30:40,149 -  nornir.core -     INFO -        run() - Running task 'failed_show_command' with args {} on 1 hosts
+2019-09-29 09:30:45,528 - nornir.core.task -    ERROR -      start() - Host 'srx2': task 'failed_show_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise1.py", line 16, in failed_show_command
+    raise ValueError("THIS IS AN ERROR - INVALID COMMAND")
+ValueError: THIS IS AN ERROR - INVALID COMMAND
+
+2019-09-29 09:31:00,232 -  nornir.core -     INFO -        run() - Running task 'failed_show_command' with args {} on 1 hosts
+2019-09-29 09:31:05,631 - nornir.core.task -    ERROR -      start() - Host 'srx2': task 'failed_show_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise1.py", line 16, in failed_show_command
+    raise ValueError("THIS IS AN ERROR - INVALID COMMAND")
+ValueError: THIS IS AN ERROR - INVALID COMMAND
+
+2019-10-01 02:28:09,433 -  nornir.core -     INFO -        run() - Running task 'failed_show_command' with args {} on 1 hosts
+2019-10-01 02:28:14,892 - nornir.core.task -    ERROR -      start() - Host 'srx2': task 'failed_show_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise1.py", line 14, in failed_show_command
+    raise ValueError("THIS IS AN ERROR - INVALID COMMAND")
+ValueError: THIS IS AN ERROR - INVALID COMMAND
+

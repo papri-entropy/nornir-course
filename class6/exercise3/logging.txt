@@ -1,0 +1,100 @@
+2019-10-02 05:04:43,783 -  nornir.core -     INFO -        run() - Running task 'log_show_command' with args {} on 1 hosts
+2019-10-02 05:04:43,787 - nornir.core.task -    DEBUG -      start() - Host 'arista1': running task 'log_show_command'
+2019-10-02 05:04:43,787 - nornir.core.task -    DEBUG -      start() - Host 'arista1': running task 'netmiko_send_command'
+2019-10-02 05:10:45,651 -  nornir.core -     INFO -        run() - Running task 'log_show_command' with args {} on 1 hosts
+2019-10-02 05:10:45,655 - nornir.core.task -    DEBUG -      start() - Host 'arista1': running task 'log_show_command'
+2019-10-02 05:10:45,655 - nornir.core.task -    DEBUG -      start() - Host 'arista1': running task 'netmiko_send_command'
+2019-10-02 05:10:46,191 - nornir.core.task -    ERROR -      start() - Host 'arista1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 58, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 243, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 317, in __init__
+    self._open()
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 322, in _open
+    self.establish_connection()
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 869, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/paramiko/client.py", line 446, in connect
+    passphrase,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/paramiko/client.py", line 765, in _auth
+    raise SSHException("No authentication methods available")
+paramiko.ssh_exception.SSHException: No authentication methods available
+
+2019-10-02 05:10:46,191 - nornir.core.task -    ERROR -      start() - Host 'arista1': task 'log_show_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise3.py", line 10, in log_show_command
+    task.run(task=networking.netmiko_send_command, command_string="show ip interface brief")
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2019-10-02 05:13:46,263 -  nornir.core -     INFO -        run() - Running task 'log_show_command' with args {} on 1 hosts
+2019-10-02 05:13:46,266 - nornir.core.task -    DEBUG -      start() - Host 'arista1': running task 'log_show_command'
+2019-10-02 05:13:46,267 - nornir.core.task -    DEBUG -      start() - Host 'arista1': running task 'netmiko_send_command'
+2019-10-02 05:23:32,434 -  nornir.core -     INFO -        run() - Running task 'log_show_command' with args {} on 1 hosts
+2019-10-02 05:23:32,438 - nornir.core.task -    DEBUG -      start() - Host 'arista1': running task 'log_show_command'
+2019-10-02 05:23:32,438 - nornir.core.task -    DEBUG -      start() - Host 'arista1': running task 'netmiko_send_command'
+2019-10-02 05:26:32,609 -  nornir.core -     INFO -        run() - Running task 'log_show_command' with args {} on 1 hosts
+2019-10-02 05:26:32,613 - nornir.core.task -    DEBUG -      start() - Host 'arista1': running task 'log_show_command'
+2019-10-02 05:26:32,613 - nornir.core.task -    DEBUG -      start() - Host 'arista1': running task 'netmiko_send_command'
+2019-10-02 05:29:05,425 -  nornir.core -     INFO -        run() - Running task 'log_show_command' with args {} on 4 hosts
+2019-10-02 05:29:05,429 - nornir.core.task -    DEBUG -      start() - Host 'arista1': running task 'log_show_command'
+2019-10-02 05:29:05,429 - nornir.core.task -    DEBUG -      start() - Host 'arista1': running task 'netmiko_send_command'
+2019-10-02 05:29:05,430 - nornir.core.task -    DEBUG -      start() - Host 'arista2': running task 'log_show_command'
+2019-10-02 05:29:05,430 - nornir.core.task -    DEBUG -      start() - Host 'arista2': running task 'netmiko_send_command'
+2019-10-02 05:29:05,430 - nornir.core.task -    DEBUG -      start() - Host 'arista3': running task 'log_show_command'
+2019-10-02 05:29:05,430 - nornir.core.task -    DEBUG -      start() - Host 'arista3': running task 'netmiko_send_command'
+2019-10-02 05:29:05,431 - nornir.core.task -    DEBUG -      start() - Host 'arista4': running task 'log_show_command'
+2019-10-02 05:29:05,431 - nornir.core.task -    DEBUG -      start() - Host 'arista4': running task 'netmiko_send_command'
+2019-10-02 05:33:49,678 -       nornir -     INFO -       main() - TESTING DUDE
+2019-10-02 05:33:49,678 -  nornir.core -     INFO -        run() - Running task 'log_show_command' with args {} on 4 hosts
+2019-10-02 05:33:49,682 - nornir.core.task -    DEBUG -      start() - Host 'arista1': running task 'log_show_command'
+2019-10-02 05:33:49,682 - nornir.core.task -    DEBUG -      start() - Host 'arista1': running task 'netmiko_send_command'
+2019-10-02 05:33:49,683 - nornir.core.task -    DEBUG -      start() - Host 'arista2': running task 'log_show_command'
+2019-10-02 05:33:49,683 - nornir.core.task -    DEBUG -      start() - Host 'arista2': running task 'netmiko_send_command'
+2019-10-02 05:33:49,683 - nornir.core.task -    DEBUG -      start() - Host 'arista3': running task 'log_show_command'
+2019-10-02 05:33:49,683 - nornir.core.task -    DEBUG -      start() - Host 'arista3': running task 'netmiko_send_command'
+2019-10-02 05:33:49,684 - nornir.core.task -    DEBUG -      start() - Host 'arista4': running task 'log_show_command'
+2019-10-02 05:33:49,684 - nornir.core.task -    DEBUG -      start() - Host 'arista4': running task 'netmiko_send_command'
+2019-10-02 05:36:28,597 -       nornir -     INFO -       main() - TESTING INFO LOGGING
+2019-10-02 05:36:28,598 -       nornir - CRITICAL -       main() - THIS IS CRITICAL LOGGING STUFF
+2019-10-02 05:36:28,598 -       nornir -    ERROR -       main() - THIS IS ERROR LOGGING STUFF
+2019-10-02 05:37:01,178 -       nornir -     INFO -       main() - TESTING INFO LOGGING
+2019-10-02 05:37:01,178 -       nornir - CRITICAL -       main() - THIS IS CRITICAL LOGGING STUFF
+2019-10-02 05:37:01,179 -       nornir -    ERROR -       main() - THIS IS ERROR LOGGING STUFF
+2019-10-02 05:37:01,179 -       nornir -    DEBUG -       main() - THIS IS DEBUG LOGGING STUFF
+2019-10-02 05:37:01,179 -  nornir.core -     INFO -        run() - Running task 'log_show_command' with args {} on 4 hosts
+2019-10-02 05:37:01,183 - nornir.core.task -    DEBUG -      start() - Host 'arista1': running task 'log_show_command'
+2019-10-02 05:37:01,183 - nornir.core.task -    DEBUG -      start() - Host 'arista1': running task 'netmiko_send_command'
+2019-10-02 05:37:01,184 - nornir.core.task -    DEBUG -      start() - Host 'arista2': running task 'log_show_command'
+2019-10-02 05:37:01,184 - nornir.core.task -    DEBUG -      start() - Host 'arista2': running task 'netmiko_send_command'
+2019-10-02 05:37:01,184 - nornir.core.task -    DEBUG -      start() - Host 'arista3': running task 'log_show_command'
+2019-10-02 05:37:01,184 - nornir.core.task -    DEBUG -      start() - Host 'arista3': running task 'netmiko_send_command'
+2019-10-02 05:37:01,185 - nornir.core.task -    DEBUG -      start() - Host 'arista4': running task 'log_show_command'
+2019-10-02 05:37:01,185 - nornir.core.task -    DEBUG -      start() - Host 'arista4': running task 'netmiko_send_command'
+2019-10-02 05:40:17,103 -       nornir -     INFO -       main() - TESTING INFO LOGGING
+2019-10-02 05:40:17,103 -       nornir - CRITICAL -       main() - THIS IS CRITICAL LOGGING STUFF
+2019-10-02 05:40:17,103 -       nornir -    ERROR -       main() - THIS IS ERROR LOGGING STUFF
+2019-10-02 05:40:17,104 -       nornir -    DEBUG -       main() - THIS IS DEBUG LOGGING STUFF
+2019-10-02 05:40:17,104 -  nornir.core -     INFO -        run() - Running task 'log_show_command' with args {} on 4 hosts
+2019-10-02 05:40:17,107 - nornir.core.task -    DEBUG -      start() - Host 'arista1': running task 'log_show_command'
+2019-10-02 05:40:17,108 - nornir.core.task -    DEBUG -      start() - Host 'arista1': running task 'netmiko_send_command'
+2019-10-02 05:40:17,108 - nornir.core.task -    DEBUG -      start() - Host 'arista2': running task 'log_show_command'
+2019-10-02 05:40:17,108 - nornir.core.task -    DEBUG -      start() - Host 'arista2': running task 'netmiko_send_command'
+2019-10-02 05:40:17,109 - nornir.core.task -    DEBUG -      start() - Host 'arista3': running task 'log_show_command'
+2019-10-02 05:40:17,109 - nornir.core.task -    DEBUG -      start() - Host 'arista3': running task 'netmiko_send_command'
+2019-10-02 05:40:17,109 - nornir.core.task -    DEBUG -      start() - Host 'arista4': running task 'log_show_command'
+2019-10-02 05:40:17,109 - nornir.core.task -    DEBUG -      start() - Host 'arista4': running task 'netmiko_send_command'

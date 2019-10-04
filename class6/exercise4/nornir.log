@@ -1,0 +1,359 @@
+2019-10-03 01:24:41,162 -  nornir.core -     INFO -        run() - Running task 'session_log_show_command' with args {} on 2 hosts
+2019-10-03 01:24:41,547 - nornir.core.task -    ERROR -      start() - Host 'nxos1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 58, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 243, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 317, in __init__
+    self._open()
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 322, in _open
+    self.establish_connection()
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 869, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/paramiko/client.py", line 446, in connect
+    passphrase,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/paramiko/client.py", line 765, in _auth
+    raise SSHException("No authentication methods available")
+paramiko.ssh_exception.SSHException: No authentication methods available
+
+2019-10-03 01:24:41,548 - nornir.core.task -    ERROR -      start() - Host 'nxos1': task 'session_log_show_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise4.py", line 13, in session_log_show_command
+    task.run(task=networking.netmiko_send_command, command_string="show ip interface brief")
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2019-10-03 01:24:41,872 - nornir.core.task -    ERROR -      start() - Host 'nxos2': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 58, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 243, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 317, in __init__
+    self._open()
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 322, in _open
+    self.establish_connection()
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 869, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/paramiko/client.py", line 446, in connect
+    passphrase,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/paramiko/client.py", line 765, in _auth
+    raise SSHException("No authentication methods available")
+paramiko.ssh_exception.SSHException: No authentication methods available
+
+2019-10-03 01:24:41,872 - nornir.core.task -    ERROR -      start() - Host 'nxos2': task 'session_log_show_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise4.py", line 13, in session_log_show_command
+    task.run(task=networking.netmiko_send_command, command_string="show ip interface brief")
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2019-10-03 01:24:58,228 -  nornir.core -     INFO -        run() - Running task 'session_log_show_command' with args {} on 2 hosts
+2019-10-03 01:25:45,275 -  nornir.core -     INFO -        run() - Running task 'session_log_show_command' with args {} on 2 hosts
+2019-10-03 01:27:51,483 -  nornir.core -     INFO -        run() - Running task 'session_log_show_command' with args {} on 2 hosts
+2019-10-03 01:28:17,948 -  nornir.core -     INFO -        run() - Running task 'session_log_show_command' with args {} on 2 hosts
+2019-10-03 01:28:18,281 - nornir.core.task -    ERROR -      start() - Host 'nxos1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 58, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 243, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 317, in __init__
+    self._open()
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 322, in _open
+    self.establish_connection()
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 869, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/paramiko/client.py", line 446, in connect
+    passphrase,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/paramiko/client.py", line 765, in _auth
+    raise SSHException("No authentication methods available")
+paramiko.ssh_exception.SSHException: No authentication methods available
+
+2019-10-03 01:28:18,281 - nornir.core.task -    ERROR -      start() - Host 'nxos1': task 'session_log_show_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise4.py", line 13, in session_log_show_command
+    task.run(task=networking.netmiko_send_command, command_string="show run | i hostname")
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2019-10-03 01:28:18,590 - nornir.core.task -    ERROR -      start() - Host 'nxos2': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 58, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 243, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 317, in __init__
+    self._open()
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 322, in _open
+    self.establish_connection()
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 869, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/paramiko/client.py", line 446, in connect
+    passphrase,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/paramiko/client.py", line 765, in _auth
+    raise SSHException("No authentication methods available")
+paramiko.ssh_exception.SSHException: No authentication methods available
+
+2019-10-03 01:28:18,590 - nornir.core.task -    ERROR -      start() - Host 'nxos2': task 'session_log_show_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise4.py", line 13, in session_log_show_command
+    task.run(task=networking.netmiko_send_command, command_string="show run | i hostname")
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2019-10-03 01:30:32,919 -  nornir.core -     INFO -        run() - Running task 'session_log_show_command' with args {} on 2 hosts
+2019-10-03 01:30:33,310 - nornir.core.task -    ERROR -      start() - Host 'nxos1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 58, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 243, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 317, in __init__
+    self._open()
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 322, in _open
+    self.establish_connection()
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 869, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/paramiko/client.py", line 446, in connect
+    passphrase,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/paramiko/client.py", line 765, in _auth
+    raise SSHException("No authentication methods available")
+paramiko.ssh_exception.SSHException: No authentication methods available
+
+2019-10-03 01:30:33,310 - nornir.core.task -    ERROR -      start() - Host 'nxos1': task 'session_log_show_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise4.py", line 13, in session_log_show_command
+    task.run(task=networking.netmiko_send_command, command_string="show run | i hostname")
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2019-10-03 01:30:33,625 - nornir.core.task -    ERROR -      start() - Host 'nxos2': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 58, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 243, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 317, in __init__
+    self._open()
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 322, in _open
+    self.establish_connection()
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 869, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/paramiko/client.py", line 446, in connect
+    passphrase,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/paramiko/client.py", line 765, in _auth
+    raise SSHException("No authentication methods available")
+paramiko.ssh_exception.SSHException: No authentication methods available
+
+2019-10-03 01:30:33,625 - nornir.core.task -    ERROR -      start() - Host 'nxos2': task 'session_log_show_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise4.py", line 13, in session_log_show_command
+    task.run(task=networking.netmiko_send_command, command_string="show run | i hostname")
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2019-10-03 01:30:53,842 -  nornir.core -     INFO -        run() - Running task 'session_log_show_command' with args {} on 2 hosts
+2019-10-03 01:30:54,172 - nornir.core.task -    ERROR -      start() - Host 'nxos1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 58, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 243, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 317, in __init__
+    self._open()
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 322, in _open
+    self.establish_connection()
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 869, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/paramiko/client.py", line 446, in connect
+    passphrase,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/paramiko/client.py", line 765, in _auth
+    raise SSHException("No authentication methods available")
+paramiko.ssh_exception.SSHException: No authentication methods available
+
+2019-10-03 01:30:54,173 - nornir.core.task -    ERROR -      start() - Host 'nxos1': task 'session_log_show_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise4.py", line 13, in session_log_show_command
+    task.run(task=networking.netmiko_send_command, command_string="show run | i hostname")
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2019-10-03 01:30:54,473 - nornir.core.task -    ERROR -      start() - Host 'nxos2': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/netmiko.py", line 58, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/ssh_dispatcher.py", line 243, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 317, in __init__
+    self._open()
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 322, in _open
+    self.establish_connection()
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/netmiko/base_connection.py", line 869, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/paramiko/client.py", line 446, in connect
+    passphrase,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/paramiko/client.py", line 765, in _auth
+    raise SSHException("No authentication methods available")
+paramiko.ssh_exception.SSHException: No authentication methods available
+
+2019-10-03 01:30:54,473 - nornir.core.task -    ERROR -      start() - Host 'nxos2': task 'session_log_show_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise4.py", line 13, in session_log_show_command
+    task.run(task=networking.netmiko_send_command, command_string="show run | i hostname")
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 124, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_command (failed)
+
+
+2019-10-03 01:31:55,458 -  nornir.core -     INFO -        run() - Running task 'session_log_show_command' with args {} on 2 hosts
+2019-10-03 01:32:20,437 -  nornir.core -     INFO -        run() - Running task 'session_log_show_command' with args {} on 2 hosts
+2019-10-03 01:32:49,365 -  nornir.core -     INFO -        run() - Running task 'session_log_show_command' with args {} on 2 hosts
+2019-10-03 01:34:15,496 -  nornir.core -     INFO -        run() - Running task 'session_log_show_command' with args {} on 2 hosts
+2019-10-03 01:49:35,699 -  nornir.core -     INFO -        run() - Running task 'session_log_show_command' with args {} on 2 hosts
+2019-10-03 01:49:58,233 - nornir.core.task -    ERROR -      start() - Host 'nxos1': task 'session_log_show_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise4b.py", line 19, in session_log_show_command
+    task.run(task=networking.netmiko_send_command, command_string="show run | i hostname")
+  File "exercise4b.py", line 19, in session_log_show_command
+    task.run(task=networking.netmiko_send_command, command_string="show run | i hostname")
+  File "/usr/lib64/python3.6/bdb.py", line 51, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib64/python3.6/bdb.py", line 70, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+
+2019-10-03 01:50:00,050 - nornir.core.task -    ERROR -      start() - Host 'nxos2': task 'session_log_show_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise4b.py", line 15, in session_log_show_command
+    session_log_filename = f"{task.host}-session-log.txt"
+  File "exercise4b.py", line 15, in session_log_show_command
+    session_log_filename = f"{task.host}-session-log.txt"
+  File "/usr/lib64/python3.6/bdb.py", line 51, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib64/python3.6/bdb.py", line 70, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+
+2019-10-03 01:50:09,467 -  nornir.core -     INFO -        run() - Running task 'session_log_show_command' with args {} on 2 hosts
+2019-10-03 01:56:51,850 -  nornir.core -     INFO -        run() - Running task 'session_log_show_command' with args {} on 2 hosts
+2019-10-03 01:56:51,850 - nornir.core.task -    ERROR -      start() - Host 'nxos1': task 'session_log_show_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise4b.py", line 18, in session_log_show_command
+    group_object.connection_options["netmiko"].extras["session_log"] = filename
+NameError: name 'filename' is not defined
+
+2019-10-03 01:56:51,850 - nornir.core.task -    ERROR -      start() - Host 'nxos2': task 'session_log_show_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise4b.py", line 18, in session_log_show_command
+    group_object.connection_options["netmiko"].extras["session_log"] = filename
+NameError: name 'filename' is not defined
+
+2019-10-03 01:57:28,787 -  nornir.core -     INFO -        run() - Running task 'session_log_show_command' with args {} on 2 hosts
+2019-10-03 01:59:25,918 -  nornir.core -     INFO -        run() - Running task 'session_log_show_command' with args {} on 2 hosts
+2019-10-03 01:59:53,108 -  nornir.core -     INFO -        run() - Running task 'session_log_show_command' with args {} on 2 hosts
+2019-10-03 02:00:14,701 -  nornir.core -     INFO -        run() - Running task 'session_log_show_command' with args {} on 2 hosts
+2019-10-03 02:02:45,553 -  nornir.core -     INFO -        run() - Running task 'session_log_show_command' with args {} on 2 hosts
