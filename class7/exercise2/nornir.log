@@ -1,0 +1,178 @@
+2019-10-17 07:54:46,274 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['ntp_servers']} on 10 hosts
+2019-10-17 07:54:46,279 - nornir.core.task -    ERROR -      start() - Host 'arista2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 49, in open
+    network_driver = get_network_driver(platform)
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/base/__init__.py", line 74, in get_network_driver
+    raise ModuleImportError("Please provide a valid driver name.")
+napalm.base.exceptions.ModuleImportError: Please provide a valid driver name.
+
+2019-10-17 07:54:46,279 - nornir.core.task -    ERROR -      start() - Host 'arista3': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 49, in open
+    network_driver = get_network_driver(platform)
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/base/__init__.py", line 74, in get_network_driver
+    raise ModuleImportError("Please provide a valid driver name.")
+napalm.base.exceptions.ModuleImportError: Please provide a valid driver name.
+
+2019-10-17 07:54:46,280 - nornir.core.task -    ERROR -      start() - Host 'arista4': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 49, in open
+    network_driver = get_network_driver(platform)
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/base/__init__.py", line 74, in get_network_driver
+    raise ModuleImportError("Please provide a valid driver name.")
+napalm.base.exceptions.ModuleImportError: Please provide a valid driver name.
+
+2019-10-17 07:54:46,280 - nornir.core.task -    ERROR -      start() - Host 'cisco3': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 49, in open
+    network_driver = get_network_driver(platform)
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/base/__init__.py", line 74, in get_network_driver
+    raise ModuleImportError("Please provide a valid driver name.")
+napalm.base.exceptions.ModuleImportError: Please provide a valid driver name.
+
+2019-10-17 07:54:46,280 - nornir.core.task -    ERROR -      start() - Host 'cisco4': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 49, in open
+    network_driver = get_network_driver(platform)
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/base/__init__.py", line 74, in get_network_driver
+    raise ModuleImportError("Please provide a valid driver name.")
+napalm.base.exceptions.ModuleImportError: Please provide a valid driver name.
+
+2019-10-17 07:54:46,281 - nornir.core.task -    ERROR -      start() - Host 'srx2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 49, in open
+    network_driver = get_network_driver(platform)
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/base/__init__.py", line 74, in get_network_driver
+    raise ModuleImportError("Please provide a valid driver name.")
+napalm.base.exceptions.ModuleImportError: Please provide a valid driver name.
+
+2019-10-17 07:54:46,281 - nornir.core.task -    ERROR -      start() - Host 'nxos2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 49, in open
+    network_driver = get_network_driver(platform)
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/base/__init__.py", line 74, in get_network_driver
+    raise ModuleImportError("Please provide a valid driver name.")
+napalm.base.exceptions.ModuleImportError: Please provide a valid driver name.
+
+2019-10-17 07:54:46,281 - nornir.core.task -    ERROR -      start() - Host 'arista1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 49, in open
+    network_driver = get_network_driver(platform)
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/base/__init__.py", line 74, in get_network_driver
+    raise ModuleImportError("Please provide a valid driver name.")
+napalm.base.exceptions.ModuleImportError: Please provide a valid driver name.
+
+2019-10-17 07:54:46,282 - nornir.core.task -    ERROR -      start() - Host 'localhost': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 49, in open
+    network_driver = get_network_driver(platform)
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/base/__init__.py", line 74, in get_network_driver
+    raise ModuleImportError("Please provide a valid driver name.")
+napalm.base.exceptions.ModuleImportError: Please provide a valid driver name.
+
+2019-10-17 07:54:46,282 - nornir.core.task -    ERROR -      start() - Host 'nxos1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 49, in open
+    network_driver = get_network_driver(platform)
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/base/__init__.py", line 74, in get_network_driver
+    raise ModuleImportError("Please provide a valid driver name.")
+napalm.base.exceptions.ModuleImportError: Please provide a valid driver name.
+
+2019-10-17 07:56:26,652 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['ntp_servers']} on 1 hosts
+2019-10-17 07:56:26,656 - nornir.core.task -    ERROR -      start() - Host 'nxos1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 49, in open
+    network_driver = get_network_driver(platform)
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/base/__init__.py", line 74, in get_network_driver
+    raise ModuleImportError("Please provide a valid driver name.")
+napalm.base.exceptions.ModuleImportError: Please provide a valid driver name.
+

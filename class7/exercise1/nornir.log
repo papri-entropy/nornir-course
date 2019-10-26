@@ -1,0 +1,474 @@
+2019-10-15 01:23:49,515 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['ntp_servers']} on 2 hosts
+2019-10-15 01:23:52,451 - nornir.core.task -    ERROR -      start() - Host 'nxos2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 629, in open
+    self._send_command("show hostname")
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 643, in _send_command
+    return self.device.show(command, raw_text=raw_text)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/device.py", line 61, in show
+    result = self.show_list(commands, raw_text)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/device.py", line 89, in show_list
+    return self.api._nxapi_command(commands, method=cmd_method)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/api_client.py", line 105, in _nxapi_command
+    response = self._send_request(commands, method=method)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/api_client.py", line 74, in _send_request
+    raise NXAPIAuthError(msg)
+nxapi_plumbing.errors.NXAPIAuthError: Authentication to NX-API failed please verify your username, password, and hostname.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 51, in open
+    connection.open()
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 632, in open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to nxos2.lasthop.io
+
+2019-10-15 01:23:52,454 - nornir.core.task -    ERROR -      start() - Host 'nxos1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 629, in open
+    self._send_command("show hostname")
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 643, in _send_command
+    return self.device.show(command, raw_text=raw_text)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/device.py", line 61, in show
+    result = self.show_list(commands, raw_text)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/device.py", line 89, in show_list
+    return self.api._nxapi_command(commands, method=cmd_method)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/api_client.py", line 105, in _nxapi_command
+    response = self._send_request(commands, method=method)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/api_client.py", line 74, in _send_request
+    raise NXAPIAuthError(msg)
+nxapi_plumbing.errors.NXAPIAuthError: Authentication to NX-API failed please verify your username, password, and hostname.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 51, in open
+    connection.open()
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 632, in open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to nxos1.lasthop.io
+
+2019-10-15 01:24:13,434 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['ntp_servers']} on 2 hosts
+2019-10-15 01:24:15,893 - nornir.core.task -    ERROR -      start() - Host 'nxos1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 629, in open
+    self._send_command("show hostname")
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 643, in _send_command
+    return self.device.show(command, raw_text=raw_text)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/device.py", line 61, in show
+    result = self.show_list(commands, raw_text)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/device.py", line 89, in show_list
+    return self.api._nxapi_command(commands, method=cmd_method)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/api_client.py", line 105, in _nxapi_command
+    response = self._send_request(commands, method=method)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/api_client.py", line 74, in _send_request
+    raise NXAPIAuthError(msg)
+nxapi_plumbing.errors.NXAPIAuthError: Authentication to NX-API failed please verify your username, password, and hostname.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 51, in open
+    connection.open()
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 632, in open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to nxos1.lasthop.io
+
+2019-10-15 01:24:15,901 - nornir.core.task -    ERROR -      start() - Host 'nxos2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 629, in open
+    self._send_command("show hostname")
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 643, in _send_command
+    return self.device.show(command, raw_text=raw_text)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/device.py", line 61, in show
+    result = self.show_list(commands, raw_text)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/device.py", line 89, in show_list
+    return self.api._nxapi_command(commands, method=cmd_method)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/api_client.py", line 105, in _nxapi_command
+    response = self._send_request(commands, method=method)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/api_client.py", line 74, in _send_request
+    raise NXAPIAuthError(msg)
+nxapi_plumbing.errors.NXAPIAuthError: Authentication to NX-API failed please verify your username, password, and hostname.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 51, in open
+    connection.open()
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 632, in open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to nxos2.lasthop.io
+
+2019-10-15 01:35:42,316 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['ntp_servers']} on 2 hosts
+2019-10-15 01:35:44,648 - nornir.core.task -    ERROR -      start() - Host 'nxos2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 629, in open
+    self._send_command("show hostname")
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 643, in _send_command
+    return self.device.show(command, raw_text=raw_text)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/device.py", line 61, in show
+    result = self.show_list(commands, raw_text)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/device.py", line 89, in show_list
+    return self.api._nxapi_command(commands, method=cmd_method)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/api_client.py", line 105, in _nxapi_command
+    response = self._send_request(commands, method=method)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/api_client.py", line 74, in _send_request
+    raise NXAPIAuthError(msg)
+nxapi_plumbing.errors.NXAPIAuthError: Authentication to NX-API failed please verify your username, password, and hostname.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 51, in open
+    connection.open()
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 632, in open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to nxos2.lasthop.io
+
+2019-10-15 01:35:44,734 - nornir.core.task -    ERROR -      start() - Host 'nxos1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 629, in open
+    self._send_command("show hostname")
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 643, in _send_command
+    return self.device.show(command, raw_text=raw_text)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/device.py", line 61, in show
+    result = self.show_list(commands, raw_text)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/device.py", line 89, in show_list
+    return self.api._nxapi_command(commands, method=cmd_method)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/api_client.py", line 105, in _nxapi_command
+    response = self._send_request(commands, method=method)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/api_client.py", line 74, in _send_request
+    raise NXAPIAuthError(msg)
+nxapi_plumbing.errors.NXAPIAuthError: Authentication to NX-API failed please verify your username, password, and hostname.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 51, in open
+    connection.open()
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 632, in open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to nxos1.lasthop.io
+
+2019-10-15 01:35:53,407 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['ntp_servers']} on 2 hosts
+2019-10-15 01:35:55,927 - nornir.core.task -    ERROR -      start() - Host 'nxos2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 629, in open
+    self._send_command("show hostname")
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 643, in _send_command
+    return self.device.show(command, raw_text=raw_text)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/device.py", line 61, in show
+    result = self.show_list(commands, raw_text)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/device.py", line 89, in show_list
+    return self.api._nxapi_command(commands, method=cmd_method)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/api_client.py", line 105, in _nxapi_command
+    response = self._send_request(commands, method=method)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/api_client.py", line 74, in _send_request
+    raise NXAPIAuthError(msg)
+nxapi_plumbing.errors.NXAPIAuthError: Authentication to NX-API failed please verify your username, password, and hostname.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 51, in open
+    connection.open()
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 632, in open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to nxos2.lasthop.io
+
+2019-10-15 01:35:55,950 - nornir.core.task -    ERROR -      start() - Host 'nxos1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 629, in open
+    self._send_command("show hostname")
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 643, in _send_command
+    return self.device.show(command, raw_text=raw_text)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/device.py", line 61, in show
+    result = self.show_list(commands, raw_text)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/device.py", line 89, in show_list
+    return self.api._nxapi_command(commands, method=cmd_method)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/api_client.py", line 105, in _nxapi_command
+    response = self._send_request(commands, method=method)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/api_client.py", line 74, in _send_request
+    raise NXAPIAuthError(msg)
+nxapi_plumbing.errors.NXAPIAuthError: Authentication to NX-API failed please verify your username, password, and hostname.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 51, in open
+    connection.open()
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 632, in open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to nxos1.lasthop.io
+
+2019-10-15 01:42:04,675 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['ntp_servers']} on 2 hosts
+2019-10-15 01:42:07,619 - nornir.core.task -    ERROR -      start() - Host 'nxos2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 629, in open
+    self._send_command("show hostname")
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 643, in _send_command
+    return self.device.show(command, raw_text=raw_text)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/device.py", line 61, in show
+    result = self.show_list(commands, raw_text)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/device.py", line 89, in show_list
+    return self.api._nxapi_command(commands, method=cmd_method)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/api_client.py", line 105, in _nxapi_command
+    response = self._send_request(commands, method=method)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/api_client.py", line 74, in _send_request
+    raise NXAPIAuthError(msg)
+nxapi_plumbing.errors.NXAPIAuthError: Authentication to NX-API failed please verify your username, password, and hostname.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 51, in open
+    connection.open()
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 632, in open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to nxos2.lasthop.io
+
+2019-10-15 01:42:07,638 - nornir.core.task -    ERROR -      start() - Host 'nxos1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 629, in open
+    self._send_command("show hostname")
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 643, in _send_command
+    return self.device.show(command, raw_text=raw_text)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/device.py", line 61, in show
+    result = self.show_list(commands, raw_text)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/device.py", line 89, in show_list
+    return self.api._nxapi_command(commands, method=cmd_method)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/api_client.py", line 105, in _nxapi_command
+    response = self._send_request(commands, method=method)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/api_client.py", line 74, in _send_request
+    raise NXAPIAuthError(msg)
+nxapi_plumbing.errors.NXAPIAuthError: Authentication to NX-API failed please verify your username, password, and hostname.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 51, in open
+    connection.open()
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 632, in open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to nxos1.lasthop.io
+
+2019-10-15 01:43:09,046 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['ntp_servers']} on 2 hosts
+2019-10-15 01:43:10,757 - nornir.core.task -    ERROR -      start() - Host 'nxos2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 629, in open
+    self._send_command("show hostname")
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 643, in _send_command
+    return self.device.show(command, raw_text=raw_text)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/device.py", line 61, in show
+    result = self.show_list(commands, raw_text)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/device.py", line 89, in show_list
+    return self.api._nxapi_command(commands, method=cmd_method)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/api_client.py", line 105, in _nxapi_command
+    response = self._send_request(commands, method=method)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/api_client.py", line 74, in _send_request
+    raise NXAPIAuthError(msg)
+nxapi_plumbing.errors.NXAPIAuthError: Authentication to NX-API failed please verify your username, password, and hostname.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 51, in open
+    connection.open()
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 632, in open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to nxos2.lasthop.io
+
+2019-10-15 01:43:10,781 - nornir.core.task -    ERROR -      start() - Host 'nxos1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 629, in open
+    self._send_command("show hostname")
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 643, in _send_command
+    return self.device.show(command, raw_text=raw_text)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/device.py", line 61, in show
+    result = self.show_list(commands, raw_text)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/device.py", line 89, in show_list
+    return self.api._nxapi_command(commands, method=cmd_method)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/api_client.py", line 105, in _nxapi_command
+    response = self._send_request(commands, method=method)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/api_client.py", line 74, in _send_request
+    raise NXAPIAuthError(msg)
+nxapi_plumbing.errors.NXAPIAuthError: Authentication to NX-API failed please verify your username, password, and hostname.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 51, in open
+    connection.open()
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 632, in open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to nxos1.lasthop.io
+
+2019-10-15 05:47:15,102 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['ntp_servers']} on 2 hosts
+2019-10-15 05:47:59,007 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['ntp_servers']} on 2 hosts
+2019-10-17 01:33:39,666 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['ntp_servers']} on 2 hosts
+2019-10-17 01:33:42,572 - nornir.core.task -    ERROR -      start() - Host 'nxos2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 629, in open
+    self._send_command("show hostname")
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 643, in _send_command
+    return self.device.show(command, raw_text=raw_text)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/device.py", line 61, in show
+    result = self.show_list(commands, raw_text)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/device.py", line 89, in show_list
+    return self.api._nxapi_command(commands, method=cmd_method)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/api_client.py", line 105, in _nxapi_command
+    response = self._send_request(commands, method=method)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/api_client.py", line 74, in _send_request
+    raise NXAPIAuthError(msg)
+nxapi_plumbing.errors.NXAPIAuthError: Authentication to NX-API failed please verify your username, password, and hostname.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 51, in open
+    connection.open()
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 632, in open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to nxos2.lasthop.io
+
+2019-10-17 01:33:42,577 - nornir.core.task -    ERROR -      start() - Host 'nxos1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 629, in open
+    self._send_command("show hostname")
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 643, in _send_command
+    return self.device.show(command, raw_text=raw_text)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/device.py", line 61, in show
+    result = self.show_list(commands, raw_text)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/device.py", line 89, in show_list
+    return self.api._nxapi_command(commands, method=cmd_method)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/api_client.py", line 105, in _nxapi_command
+    response = self._send_request(commands, method=method)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nxapi_plumbing/api_client.py", line 74, in _send_request
+    raise NXAPIAuthError(msg)
+nxapi_plumbing.errors.NXAPIAuthError: Authentication to NX-API failed please verify your username, password, and hostname.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/tasks/networking/napalm_get.py", line 49, in napalm_get
+    device = task.host.get_connection("napalm", task.nornir.config)
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/plugins/connections/napalm.py", line 51, in open
+    connection.open()
+  File "/home/petrache/VENV/py3_venv/src/napalm/napalm/nxos/nxos.py", line 632, in open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to nxos1.lasthop.io
+
+2019-10-17 01:45:19,283 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['ntp_servers']} on 2 hosts
+2019-10-17 01:45:52,843 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['ntp_servers']} on 2 hosts
+2019-10-18 01:12:18,797 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['ntp_servers']} on 2 hosts

@@ -1,0 +1,38 @@
+2019-10-26 11:09:20,851 -  nornir.core -     INFO -        run() - Running task 'direct' with args {} on 2 hosts
+2019-10-26 11:10:33,652 - nornir.core.task -    ERROR -      start() - Host 'nxos1': task 'direct' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise6.py", line 18, in direct
+    print(napalm)
+  File "exercise6.py", line 18, in direct
+    print(napalm)
+  File "/usr/lib64/python3.6/bdb.py", line 51, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib64/python3.6/bdb.py", line 70, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+
+2019-10-26 11:10:37,467 - nornir.core.task -    ERROR -      start() - Host 'nxos2': task 'direct' failed with traceback:
+Traceback (most recent call last):
+  File "/home/petrache/VENV/py3_venv/local/lib/python3.6/site-packages/nornir/core/task.py", line 67, in start
+    r = self.task(self, **self.params)
+  File "exercise6.py", line 16, in direct
+    napalm = task.host.get_connection("napalm", task.nornir.config)
+  File "exercise6.py", line 16, in direct
+    napalm = task.host.get_connection("napalm", task.nornir.config)
+  File "/usr/lib64/python3.6/bdb.py", line 51, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib64/python3.6/bdb.py", line 70, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+
+2019-10-26 11:12:09,685 -  nornir.core -     INFO -        run() - Running task 'direct' with args {} on 2 hosts
+2019-10-26 11:12:52,966 -  nornir.core -     INFO -        run() - Running task 'direct' with args {} on 2 hosts
+2019-10-26 11:13:17,688 -  nornir.core -     INFO -        run() - Running task 'direct' with args {} on 2 hosts
+2019-10-26 11:15:22,749 -  nornir.core -     INFO -        run() - Running task 'direct' with args {} on 2 hosts
+2019-10-26 11:17:22,451 -  nornir.core -     INFO -        run() - Running task 'direct' with args {} on 2 hosts
+2019-10-26 11:19:11,676 -  nornir.core -     INFO -        run() - Running task 'direct' with args {} on 2 hosts
+2019-10-26 11:21:13,024 -  nornir.core -     INFO -        run() - Running task 'direct' with args {} on 2 hosts
+2019-10-26 11:23:10,695 -  nornir.core -     INFO -        run() - Running task 'direct' with args {} on 2 hosts
+2019-10-26 11:24:00,993 -  nornir.core -     INFO -        run() - Running task 'direct' with args {} on 2 hosts
